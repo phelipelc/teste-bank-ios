@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		80C1FD6223F202D700446B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1FD6123F202D700446B5A /* AppDelegate.swift */; };
-		80C1FD6423F202D700446B5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1FD6323F202D700446B5A /* ViewController.swift */; };
-		80C1FD6723F202D700446B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C1FD6523F202D700446B5A /* Main.storyboard */; };
+		80C1FD6423F202D700446B5A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1FD6323F202D700446B5A /* LoginViewController.swift */; };
 		80C1FD6923F202DD00446B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80C1FD6823F202DD00446B5A /* Assets.xcassets */; };
 		80C1FD6C23F202DD00446B5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C1FD6A23F202DD00446B5A /* LaunchScreen.storyboard */; };
 		80C1FD7723F202DD00446B5A /* teste_bank_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1FD7623F202DD00446B5A /* teste_bank_iosTests.swift */; };
@@ -28,8 +27,7 @@
 /* Begin PBXFileReference section */
 		80C1FD5E23F202D700446B5A /* teste-bank-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "teste-bank-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C1FD6123F202D700446B5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		80C1FD6323F202D700446B5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		80C1FD6623F202D700446B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80C1FD6323F202D700446B5A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		80C1FD6823F202DD00446B5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80C1FD6B23F202DD00446B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80C1FD6D23F202DD00446B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,9 +75,8 @@
 		80C1FD6023F202D700446B5A /* teste-bank-ios */ = {
 			isa = PBXGroup;
 			children = (
+				80C1FD8123F205B900446B5A /* Scenes */,
 				80C1FD6123F202D700446B5A /* AppDelegate.swift */,
-				80C1FD6323F202D700446B5A /* ViewController.swift */,
-				80C1FD6523F202D700446B5A /* Main.storyboard */,
 				80C1FD6823F202DD00446B5A /* Assets.xcassets */,
 				80C1FD6A23F202DD00446B5A /* LaunchScreen.storyboard */,
 				80C1FD6D23F202DD00446B5A /* Info.plist */,
@@ -94,6 +91,22 @@
 				80C1FD7823F202DD00446B5A /* Info.plist */,
 			);
 			path = "teste-bank-iosTests";
+			sourceTree = "<group>";
+		};
+		80C1FD8123F205B900446B5A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				80C1FD8223F205C900446B5A /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		80C1FD8223F205C900446B5A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				80C1FD6323F202D700446B5A /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +192,6 @@
 			files = (
 				80C1FD6C23F202DD00446B5A /* LaunchScreen.storyboard in Resources */,
 				80C1FD6923F202DD00446B5A /* Assets.xcassets in Resources */,
-				80C1FD6723F202D700446B5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80C1FD6423F202D700446B5A /* ViewController.swift in Sources */,
+				80C1FD6423F202D700446B5A /* LoginViewController.swift in Sources */,
 				80C1FD6223F202D700446B5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,14 +233,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		80C1FD6523F202D700446B5A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				80C1FD6623F202D700446B5A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		80C1FD6A23F202DD00446B5A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
