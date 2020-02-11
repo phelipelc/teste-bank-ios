@@ -12,8 +12,18 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.red
+        setupLayout()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func setupLayout() {
+        let logo = CustomLogo()
+        logo.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(logo)
+        
+        logo.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 56).isActive = true
+        logo.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+       
     }
 
 

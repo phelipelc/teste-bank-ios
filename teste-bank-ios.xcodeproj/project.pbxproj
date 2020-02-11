@@ -12,6 +12,9 @@
 		80C1FD6923F202DD00446B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80C1FD6823F202DD00446B5A /* Assets.xcassets */; };
 		80C1FD6C23F202DD00446B5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C1FD6A23F202DD00446B5A /* LaunchScreen.storyboard */; };
 		80C1FD7723F202DD00446B5A /* teste_bank_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1FD7623F202DD00446B5A /* teste_bank_iosTests.swift */; };
+		80C1FD8523F20C8E00446B5A /* CustomLogo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C1FD8423F20C8E00446B5A /* CustomLogo.xib */; };
+		80C1FD8723F2111300446B5A /* CustomLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1FD8623F2111300446B5A /* CustomLogo.swift */; };
+		80C1FD8923F2375000446B5A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C1FD8823F2375000446B5A /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 		80C1FD7223F202DD00446B5A /* teste-bank-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "teste-bank-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C1FD7623F202DD00446B5A /* teste_bank_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teste_bank_iosTests.swift; sourceTree = "<group>"; };
 		80C1FD7823F202DD00446B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80C1FD8423F20C8E00446B5A /* CustomLogo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomLogo.xib; sourceTree = "<group>"; };
+		80C1FD8623F2111300446B5A /* CustomLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLogo.swift; sourceTree = "<group>"; };
+		80C1FD8823F2375000446B5A /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 		80C1FD6023F202D700446B5A /* teste-bank-ios */ = {
 			isa = PBXGroup;
 			children = (
+				80C1FD8323F2082100446B5A /* Utils */,
 				80C1FD8123F205B900446B5A /* Scenes */,
 				80C1FD6123F202D700446B5A /* AppDelegate.swift */,
 				80C1FD6823F202DD00446B5A /* Assets.xcassets */,
@@ -105,8 +112,18 @@
 			isa = PBXGroup;
 			children = (
 				80C1FD6323F202D700446B5A /* LoginViewController.swift */,
+				80C1FD8823F2375000446B5A /* LoginViewController.xib */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		80C1FD8323F2082100446B5A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				80C1FD8423F20C8E00446B5A /* CustomLogo.xib */,
+				80C1FD8623F2111300446B5A /* CustomLogo.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +207,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C1FD8923F2375000446B5A /* LoginViewController.xib in Resources */,
+				80C1FD8523F20C8E00446B5A /* CustomLogo.xib in Resources */,
 				80C1FD6C23F202DD00446B5A /* LaunchScreen.storyboard in Resources */,
 				80C1FD6923F202DD00446B5A /* Assets.xcassets in Resources */,
 			);
@@ -210,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C1FD6423F202D700446B5A /* LoginViewController.swift in Sources */,
+				80C1FD8723F2111300446B5A /* CustomLogo.swift in Sources */,
 				80C1FD6223F202D700446B5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
