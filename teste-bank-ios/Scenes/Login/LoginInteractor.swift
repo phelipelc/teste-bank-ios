@@ -13,7 +13,25 @@ protocol LoginInteractorProtocol {
 }
 
 class LoginInteractor: LoginInteractorProtocol  {
-    func doLogin(user: String, password: String) {
+    var worker: LoginWorkerProtocol?
     
+    func doLogin(user: String, password: String) {
+        if(validateFields(user: user, password: password)){
+            
+        }
+        
     }
+    
+    func validateFields(user: String, password: String) -> Bool {
+        if(!Commons.isValidEmail(stringValue: user)
+            || !Commons.validaCPF(cpf: user)) {
+            return false
+        }
+        
+        if(!Commons.isValidPassword(password: password)) {
+           return false
+        }
+        return true
+    }
+    
 }

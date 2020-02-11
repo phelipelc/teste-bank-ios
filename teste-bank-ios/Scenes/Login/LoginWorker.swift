@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import Alamofire
+
+protocol LoginWorkerProtocol {
+    func requestLogin()
+}
+
+class LoginWorker: LoginWorkerProtocol {
+    func requestLogin() {
+        
+    }
+    
+}

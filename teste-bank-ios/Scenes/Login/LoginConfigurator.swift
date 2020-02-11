@@ -15,7 +15,10 @@ struct LoginConfigurator {
     func configure(controller: UIViewController) {
         let viewController = controller as! LoginViewController
         viewController.router = LoginRouter()
-        viewController.interactor = LoginInteractor()
+        
+        let interactor = LoginInteractor()
+        viewController.interactor = interactor
+        interactor.worker = LoginWorker()
         
     }
     
