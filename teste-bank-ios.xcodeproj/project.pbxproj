@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C09FEDD113F1BE69F797F02 /* Pods_teste_bank_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5D3B05AF7EA02975EE1C75 /* Pods_teste_bank_iosTests.framework */; };
 		80C1FD6223F202D700446B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1FD6123F202D700446B5A /* AppDelegate.swift */; };
 		80C1FD6423F202D700446B5A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1FD6323F202D700446B5A /* LoginViewController.swift */; };
 		80C1FD6923F202DD00446B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80C1FD6823F202DD00446B5A /* Assets.xcassets */; };
@@ -15,6 +16,12 @@
 		80C1FD8523F20C8E00446B5A /* CustomLogo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C1FD8423F20C8E00446B5A /* CustomLogo.xib */; };
 		80C1FD8723F2111300446B5A /* CustomLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1FD8623F2111300446B5A /* CustomLogo.swift */; };
 		80C1FD8923F2375000446B5A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C1FD8823F2375000446B5A /* LoginViewController.xib */; };
+		80C1FD8D23F259FE00446B5A /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1FD8C23F259FE00446B5A /* LoginConfigurator.swift */; };
+		80C1FD8F23F25A2C00446B5A /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1FD8E23F25A2C00446B5A /* LoginRouter.swift */; };
+		80C1FD9123F25A5300446B5A /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1FD9023F25A5300446B5A /* LoginInteractor.swift */; };
+		80C1FD9323F25AD700446B5A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1FD9223F25AD700446B5A /* LoginPresenter.swift */; };
+		80F0466823F2E7AB00C87A7D /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F0466723F2E7AB00C87A7D /* LoginWorker.swift */; };
+		BEA490D0D89F5DE6B8023BBD /* Pods_teste_bank_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D17670895A231B0878412A7D /* Pods_teste_bank_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B9E2780E3B430E4F88D6C44 /* Pods-teste-bank-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-bank-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-teste-bank-iosTests/Pods-teste-bank-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C5D3B05AF7EA02975EE1C75 /* Pods_teste_bank_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teste_bank_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C1FD5E23F202D700446B5A /* teste-bank-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "teste-bank-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C1FD6123F202D700446B5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C1FD6323F202D700446B5A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +49,15 @@
 		80C1FD8423F20C8E00446B5A /* CustomLogo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomLogo.xib; sourceTree = "<group>"; };
 		80C1FD8623F2111300446B5A /* CustomLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLogo.swift; sourceTree = "<group>"; };
 		80C1FD8823F2375000446B5A /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		80C1FD8C23F259FE00446B5A /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		80C1FD8E23F25A2C00446B5A /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		80C1FD9023F25A5300446B5A /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		80C1FD9223F25AD700446B5A /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		80F0466723F2E7AB00C87A7D /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		A19C27EA3BC3AF33612D852E /* Pods-teste-bank-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-bank-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-teste-bank-ios/Pods-teste-bank-ios.release.xcconfig"; sourceTree = "<group>"; };
+		CB260E846010BFF472887B6B /* Pods-teste-bank-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-bank-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-teste-bank-ios/Pods-teste-bank-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		D17670895A231B0878412A7D /* Pods_teste_bank_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teste_bank_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E294036795F28AC0961E83C9 /* Pods-teste-bank-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-bank-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-teste-bank-iosTests/Pods-teste-bank-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA490D0D89F5DE6B8023BBD /* Pods_teste_bank_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C09FEDD113F1BE69F797F02 /* Pods_teste_bank_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +86,8 @@
 				80C1FD6023F202D700446B5A /* teste-bank-ios */,
 				80C1FD7523F202DD00446B5A /* teste-bank-iosTests */,
 				80C1FD5F23F202D700446B5A /* Products */,
+				8822A1673D2BE1110EA4181A /* Pods */,
+				D614868FB3FA21D8BE59CE4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,7 +133,12 @@
 		80C1FD8223F205C900446B5A /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				80C1FD8C23F259FE00446B5A /* LoginConfigurator.swift */,
+				80C1FD8E23F25A2C00446B5A /* LoginRouter.swift */,
 				80C1FD6323F202D700446B5A /* LoginViewController.swift */,
+				80C1FD9023F25A5300446B5A /* LoginInteractor.swift */,
+				80C1FD9223F25AD700446B5A /* LoginPresenter.swift */,
+				80F0466723F2E7AB00C87A7D /* LoginWorker.swift */,
 				80C1FD8823F2375000446B5A /* LoginViewController.xib */,
 			);
 			path = Login;
@@ -134,6 +161,26 @@
 			path = components;
 			sourceTree = "<group>";
 		};
+		8822A1673D2BE1110EA4181A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB260E846010BFF472887B6B /* Pods-teste-bank-ios.debug.xcconfig */,
+				A19C27EA3BC3AF33612D852E /* Pods-teste-bank-ios.release.xcconfig */,
+				1B9E2780E3B430E4F88D6C44 /* Pods-teste-bank-iosTests.debug.xcconfig */,
+				E294036795F28AC0961E83C9 /* Pods-teste-bank-iosTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D614868FB3FA21D8BE59CE4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D17670895A231B0878412A7D /* Pods_teste_bank_ios.framework */,
+				7C5D3B05AF7EA02975EE1C75 /* Pods_teste_bank_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80C1FD7B23F202DD00446B5A /* Build configuration list for PBXNativeTarget "teste-bank-ios" */;
 			buildPhases = (
+				F208D7BD27A509B7722A8597 /* [CP] Check Pods Manifest.lock */,
 				80C1FD5A23F202D700446B5A /* Sources */,
 				80C1FD5B23F202D700446B5A /* Frameworks */,
 				80C1FD5C23F202D700446B5A /* Resources */,
+				4B662B2E6221996B56BE600C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +207,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80C1FD7E23F202DD00446B5A /* Build configuration list for PBXNativeTarget "teste-bank-iosTests" */;
 			buildPhases = (
+				5E35DFF3CFEC6A6E1C0740F0 /* [CP] Check Pods Manifest.lock */,
 				80C1FD6E23F202DD00446B5A /* Sources */,
 				80C1FD6F23F202DD00446B5A /* Frameworks */,
 				80C1FD7023F202DD00446B5A /* Resources */,
@@ -231,6 +281,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B662B2E6221996B56BE600C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-teste-bank-ios/Pods-teste-bank-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DTTextField/DTTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-teste-bank-ios/Pods-teste-bank-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E35DFF3CFEC6A6E1C0740F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-teste-bank-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F208D7BD27A509B7722A8597 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-teste-bank-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		80C1FD5A23F202D700446B5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -238,7 +361,12 @@
 			files = (
 				80C1FD6423F202D700446B5A /* LoginViewController.swift in Sources */,
 				80C1FD8723F2111300446B5A /* CustomLogo.swift in Sources */,
+				80C1FD9323F25AD700446B5A /* LoginPresenter.swift in Sources */,
+				80C1FD9123F25A5300446B5A /* LoginInteractor.swift in Sources */,
+				80C1FD8D23F259FE00446B5A /* LoginConfigurator.swift in Sources */,
+				80C1FD8F23F25A2C00446B5A /* LoginRouter.swift in Sources */,
 				80C1FD6223F202D700446B5A /* AppDelegate.swift in Sources */,
+				80F0466823F2E7AB00C87A7D /* LoginWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +518,7 @@
 		};
 		80C1FD7C23F202DD00446B5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB260E846010BFF472887B6B /* Pods-teste-bank-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -409,6 +538,7 @@
 		};
 		80C1FD7D23F202DD00446B5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A19C27EA3BC3AF33612D852E /* Pods-teste-bank-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -428,6 +558,7 @@
 		};
 		80C1FD7F23F202DD00446B5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B9E2780E3B430E4F88D6C44 /* Pods-teste-bank-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -449,6 +580,7 @@
 		};
 		80C1FD8023F202DD00446B5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E294036795F28AC0961E83C9 /* Pods-teste-bank-iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

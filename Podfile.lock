@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.9.1)
+  - DTTextField (0.3.0)
+  - IQKeyboardManagerSwift (6.0.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - DTTextField
+  - IQKeyboardManagerSwift (= 6.0.4)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DTTextField
+    - IQKeyboardManagerSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  DTTextField: c26deead1a51c92156e2a638ac7d2c702c2f345e
+  IQKeyboardManagerSwift: 36dbe324b4f9793f5f41ba5227f3e7c76dfefd50
+
+PODFILE CHECKSUM: ab0416baa4eee3ea17b34af3e05de3b811917280
+
+COCOAPODS: 1.5.3

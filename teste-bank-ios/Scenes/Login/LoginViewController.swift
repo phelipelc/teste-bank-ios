@@ -9,7 +9,8 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    var router: LoginRouterProtocol?
+    var interactor: LoginInteractorProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()

@@ -1,0 +1,6 @@
+framework module Pods_teste_bank_iosTests {
+  umbrella header "Pods-teste-bank-iosTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
