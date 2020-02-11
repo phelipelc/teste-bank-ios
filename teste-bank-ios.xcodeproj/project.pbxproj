@@ -120,10 +120,18 @@
 		80C1FD8323F2082100446B5A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				80C1FD8A23F2586F00446B5A /* components */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		80C1FD8A23F2586F00446B5A /* components */ = {
+			isa = PBXGroup;
+			children = (
 				80C1FD8423F20C8E00446B5A /* CustomLogo.xib */,
 				80C1FD8623F2111300446B5A /* CustomLogo.swift */,
 			);
-			path = Utils;
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,6 +395,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SPVN6BRY3;
 				INFOPLIST_FILE = "teste-bank-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -405,6 +414,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SPVN6BRY3;
 				INFOPLIST_FILE = "teste-bank-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
