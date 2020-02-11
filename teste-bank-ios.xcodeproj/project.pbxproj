@@ -105,7 +105,6 @@
 			children = (
 				80C1FD8323F2082100446B5A /* Utils */,
 				80C1FD8123F205B900446B5A /* Scenes */,
-				80C1FD6123F202D700446B5A /* AppDelegate.swift */,
 				80C1FD6823F202DD00446B5A /* Assets.xcassets */,
 				80C1FD6A23F202DD00446B5A /* LaunchScreen.storyboard */,
 				80C1FD6D23F202DD00446B5A /* Info.plist */,
@@ -147,6 +146,7 @@
 		80C1FD8323F2082100446B5A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				80C1FD6123F202D700446B5A /* AppDelegate.swift */,
 				80C1FD8A23F2586F00446B5A /* components */,
 			);
 			path = Utils;

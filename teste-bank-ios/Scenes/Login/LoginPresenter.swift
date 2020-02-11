@@ -7,3 +7,10 @@
 //
 
 import Foundation
+protocol LoginPresenterProtocol {
+    
+}
+
+class LoginPresenter {
+    
+}
