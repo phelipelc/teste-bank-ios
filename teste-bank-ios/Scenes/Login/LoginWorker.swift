@@ -10,12 +10,12 @@ import Foundation
 import Alamofire
 
 protocol LoginWorkerProtocol {
-    func requestLogin()
+    func requestLogin(completion: @escaping(Result<Any>) -> Void)
 }
 
 class LoginWorker: LoginWorkerProtocol {
-    func requestLogin() {
-        
+    func requestLogin(completion: @escaping(Result<Any>) -> Void) {
+    
     }
     
 }

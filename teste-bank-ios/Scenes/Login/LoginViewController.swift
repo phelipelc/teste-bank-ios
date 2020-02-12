@@ -9,7 +9,7 @@
 import UIKit
 import DTTextField
 protocol LoginViewProtocol {
-    func showTextFieldError(textFields: DTTextField...)
+    func showTextFieldError(textField: DTTextField)
 }
 
 class LoginViewController: UIViewController {
@@ -31,23 +31,18 @@ class LoginViewController: UIViewController {
     }
     @objc func doLogin() {
         if(txtUser.text!.isEmpty) {
-            showTextFieldError(textFields: txtUser)
+            showTextFieldError(textField: txtUser)
             return
         }
-        
         if(txtPassword.text!.isEmpty) {
-            showTextFieldError(textFields: txtPassword)
+            showTextFieldError(textField: txtPassword)
             return
         }
-        
          interactor?.doLogin(user: txtUser.text!, password: txtPassword.text!)
-        
     }
     
-    func showTextFieldError(textFields: DTTextField...) {
-        for field in textFields {
-            field.showError(message: "\(field.placeholder) invalido")
-        }
+    func showTextFieldError(textField: DTTextField) {
+        textField.showError(message: "\(textField.placeholder) invalido")
     }
     
     func setupLayout() {

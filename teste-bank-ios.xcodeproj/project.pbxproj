@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2C09FEDD113F1BE69F797F02 /* Pods_teste_bank_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5D3B05AF7EA02975EE1C75 /* Pods_teste_bank_iosTests.framework */; };
+		8011C8FA23F4453300BCAA63 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8011C8F923F4453300BCAA63 /* LoginModels.swift */; };
+		8011C8FC23F44C5200BCAA63 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8011C8FB23F44C5200BCAA63 /* Extensions.swift */; };
+		8011C8FF23F4513500BCAA63 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8011C8FE23F4513500BCAA63 /* Api.swift */; };
 		80C1FD6223F202D700446B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1FD6123F202D700446B5A /* AppDelegate.swift */; };
 		80C1FD6423F202D700446B5A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1FD6323F202D700446B5A /* LoginViewController.swift */; };
 		80C1FD6923F202DD00446B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80C1FD6823F202DD00446B5A /* Assets.xcassets */; };
@@ -38,6 +41,9 @@
 /* Begin PBXFileReference section */
 		1B9E2780E3B430E4F88D6C44 /* Pods-teste-bank-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-bank-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-teste-bank-iosTests/Pods-teste-bank-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C5D3B05AF7EA02975EE1C75 /* Pods_teste_bank_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teste_bank_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8011C8F923F4453300BCAA63 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
+		8011C8FB23F44C5200BCAA63 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8011C8FE23F4513500BCAA63 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		80C1FD5E23F202D700446B5A /* teste-bank-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "teste-bank-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C1FD6123F202D700446B5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C1FD6323F202D700446B5A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +88,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8011C8F823F443DF00BCAA63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8011C8FD23F4510600BCAA63 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8011C8FE23F4513500BCAA63 /* Api.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		80C1FD5523F202D700446B5A = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +126,8 @@
 		80C1FD6023F202D700446B5A /* teste-bank-ios */ = {
 			isa = PBXGroup;
 			children = (
+				8011C8FD23F4510600BCAA63 /* Service */,
+				8011C8F823F443DF00BCAA63 /* Model */,
 				80C1FD8323F2082100446B5A /* Utils */,
 				80C1FD8123F205B900446B5A /* Scenes */,
 				80C1FD6823F202DD00446B5A /* Assets.xcassets */,
@@ -140,6 +163,7 @@
 				80C1FD9023F25A5300446B5A /* LoginInteractor.swift */,
 				80C1FD9223F25AD700446B5A /* LoginPresenter.swift */,
 				80F0466723F2E7AB00C87A7D /* LoginWorker.swift */,
+				8011C8F923F4453300BCAA63 /* LoginModels.swift */,
 				80C1FD8823F2375000446B5A /* LoginViewController.xib */,
 			);
 			path = Login;
@@ -150,6 +174,7 @@
 			children = (
 				80F0466923F3179100C87A7D /* Commons.swift */,
 				80C1FD6123F202D700446B5A /* AppDelegate.swift */,
+				8011C8FB23F44C5200BCAA63 /* Extensions.swift */,
 				80C1FD8A23F2586F00446B5A /* components */,
 			);
 			path = Utils;
@@ -363,13 +388,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C1FD6423F202D700446B5A /* LoginViewController.swift in Sources */,
+				8011C8FA23F4453300BCAA63 /* LoginModels.swift in Sources */,
 				80C1FD8723F2111300446B5A /* CustomLogo.swift in Sources */,
 				80C1FD9323F25AD700446B5A /* LoginPresenter.swift in Sources */,
 				80C1FD9123F25A5300446B5A /* LoginInteractor.swift in Sources */,
 				80F0466A23F3179100C87A7D /* Commons.swift in Sources */,
+				8011C8FF23F4513500BCAA63 /* Api.swift in Sources */,
 				80C1FD8D23F259FE00446B5A /* LoginConfigurator.swift in Sources */,
 				80C1FD8F23F25A2C00446B5A /* LoginRouter.swift in Sources */,
 				80C1FD6223F202D700446B5A /* AppDelegate.swift in Sources */,
+				8011C8FC23F44C5200BCAA63 /* Extensions.swift in Sources */,
 				80F0466823F2E7AB00C87A7D /* LoginWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
