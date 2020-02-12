@@ -9,13 +9,12 @@
 import Foundation
 import Alamofire
 
-protocol LoginWorkerProtocol {
-    func requestLogin(completion: @escaping(Result<Any>) -> Void)
-}
-
-class LoginWorker: LoginWorkerProtocol {
-    func requestLogin(completion: @escaping(Result<Any>) -> Void) {
-    
+class LoginWorker {
+    func requestLogin(request: CreateUser.Request, completion: @escaping(CreateUser.Response) -> Void) {
+        Api().postUser(request:  request) { (response) in
+            completion(response)
+        }
+        
     }
     
 }

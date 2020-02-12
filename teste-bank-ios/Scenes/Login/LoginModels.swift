@@ -13,17 +13,7 @@ class UserResponse: Codable {
         case userAccount
     }
 }
-
-class UserRequest: Codable {
-    var user = String.empty
-    var password = String.empty
-    
-    enum CodingKeys: String, CodingKey {
-        case user, password
-    }
-}
-
-class User: Codable {
+struct User: Codable {
     var userId: Int = 0
     var name = String.empty
     var account = String.empty
@@ -39,9 +29,16 @@ enum CreateUser {
         var user: UserRequest?
     }
     struct Response {
-        var user = UserResponse()
+        var user: UserResponse?
     }
     struct ViewModel {
         
     }
-}
+    struct UserRequest: Codable {
+        var user = String.empty
+        var password = String.empty
+        
+        enum CodingKeys: String, CodingKey {
+            case user, password
+        }
+    }}

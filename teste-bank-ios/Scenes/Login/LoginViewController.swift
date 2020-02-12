@@ -9,10 +9,15 @@
 import UIKit
 import DTTextField
 protocol LoginViewProtocol {
-    func showTextFieldError(textField: DTTextField)
+    func getFieldError(txtType: TextFieldType)
+    func OnSucess()
 }
-
-class LoginViewController: UIViewController {
+enum TextFieldType {
+    case userField
+    case passwordField
+}
+class LoginViewController: UIViewController, LoginViewProtocol {
+    
     @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var txtPassword: DTTextField!
     @IBOutlet weak var txtUser: DTTextField!
@@ -21,11 +26,14 @@ class LoginViewController: UIViewController {
     var interactor: LoginInteractorProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
+        LoginConfigurator.shared.configure(controller: self)
         setupLayout()
         addTarget()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
+    func OnSucess() {
+        
+    }
     func addTarget(){
         btnLogin.addTarget(self, action: #selector(doLogin), for: .touchUpInside)
     }
@@ -40,9 +48,15 @@ class LoginViewController: UIViewController {
         }
          interactor?.doLogin(user: txtUser.text!, password: txtPassword.text!)
     }
-    
+    func getFieldError(txtType: TextFieldType) {
+        if (txtType == .userField) {
+            showTextFieldError(textField: txtUser)
+            return
+        }
+        showTextFieldError(textField: txtPassword)
+    }
     func showTextFieldError(textField: DTTextField) {
-        textField.showError(message: "\(textField.placeholder) invalido")
+        textField.showError(message: "\(textField.placeholder!) invalido")
     }
     
     func setupLayout() {

@@ -23,6 +23,8 @@
 		80C1FD8F23F25A2C00446B5A /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1FD8E23F25A2C00446B5A /* LoginRouter.swift */; };
 		80C1FD9123F25A5300446B5A /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1FD9023F25A5300446B5A /* LoginInteractor.swift */; };
 		80C1FD9323F25AD700446B5A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C1FD9223F25AD700446B5A /* LoginPresenter.swift */; };
+		80D8CBCF23F46F97002A54BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D8CBCE23F46F97002A54BC /* Constants.swift */; };
+		80D8CBD123F47275002A54BC /* EndpointBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D8CBD023F47275002A54BC /* EndpointBank.swift */; };
 		80F0466823F2E7AB00C87A7D /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F0466723F2E7AB00C87A7D /* LoginWorker.swift */; };
 		80F0466A23F3179100C87A7D /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F0466923F3179100C87A7D /* Commons.swift */; };
 		BEA490D0D89F5DE6B8023BBD /* Pods_teste_bank_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D17670895A231B0878412A7D /* Pods_teste_bank_ios.framework */; };
@@ -60,6 +62,8 @@
 		80C1FD8E23F25A2C00446B5A /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		80C1FD9023F25A5300446B5A /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		80C1FD9223F25AD700446B5A /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		80D8CBCE23F46F97002A54BC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		80D8CBD023F47275002A54BC /* EndpointBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointBank.swift; sourceTree = "<group>"; };
 		80F0466723F2E7AB00C87A7D /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
 		80F0466923F3179100C87A7D /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
 		A19C27EA3BC3AF33612D852E /* Pods-teste-bank-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-bank-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-teste-bank-ios/Pods-teste-bank-ios.release.xcconfig"; sourceTree = "<group>"; };
@@ -176,6 +180,8 @@
 				80C1FD6123F202D700446B5A /* AppDelegate.swift */,
 				8011C8FB23F44C5200BCAA63 /* Extensions.swift */,
 				80C1FD8A23F2586F00446B5A /* components */,
+				80D8CBCE23F46F97002A54BC /* Constants.swift */,
+				80D8CBD023F47275002A54BC /* EndpointBank.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -394,10 +400,12 @@
 				80C1FD9123F25A5300446B5A /* LoginInteractor.swift in Sources */,
 				80F0466A23F3179100C87A7D /* Commons.swift in Sources */,
 				8011C8FF23F4513500BCAA63 /* Api.swift in Sources */,
+				80D8CBCF23F46F97002A54BC /* Constants.swift in Sources */,
 				80C1FD8D23F259FE00446B5A /* LoginConfigurator.swift in Sources */,
 				80C1FD8F23F25A2C00446B5A /* LoginRouter.swift in Sources */,
 				80C1FD6223F202D700446B5A /* AppDelegate.swift in Sources */,
 				8011C8FC23F44C5200BCAA63 /* Extensions.swift in Sources */,
+				80D8CBD123F47275002A54BC /* EndpointBank.swift in Sources */,
 				80F0466823F2E7AB00C87A7D /* LoginWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

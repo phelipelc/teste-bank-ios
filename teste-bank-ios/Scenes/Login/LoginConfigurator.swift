@@ -18,7 +18,11 @@ struct LoginConfigurator {
         
         let interactor = LoginInteractor()
         viewController.interactor = interactor
-        interactor.worker = LoginWorker()
+        
+        let presenter = LoginPresenter()
+        interactor.presenter = presenter
+        presenter.view = viewController
+        
         
     }
     

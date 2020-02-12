@@ -8,9 +8,15 @@
 
 import Foundation
 protocol LoginPresenterProtocol {
-    
-}
+    func loginSucess()
+    func loginFailure(textField: TextFieldType)}
 
-class LoginPresenter {
-    
+class LoginPresenter: LoginPresenterProtocol {
+    var view: LoginViewProtocol?
+    func loginSucess() {
+        view?.OnSucess()
+    }
+    func loginFailure(textField: TextFieldType) {
+        view?.getFieldError(txtType: textField)
+    }
 }
